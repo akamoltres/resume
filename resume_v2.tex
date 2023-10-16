@@ -1,21 +1,119 @@
 \documentclass{article}
 
+\usepackage[
+    top=0.75in,
+    bottom=0.75in,
+    left=0.75in,
+    right=0.75in,
+    headheight=17pt,
+    includehead,
+    includefoot,
+    heightrounded,
+]{geometry}
+
 \usepackage{color}
 \usepackage[hidelinks]{hyperref}
 \usepackage{catchfile}
-
 \CatchFileDef\RawCommit{rawcommit.tmp}
 
 \usepackage{fancyhdr}
 \pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
 \fancyhead[L,R]{}
 \fancyhead[C]{\textbf{Abhiram Krishnan} \\ abhiram.krishnan27@gmail.com $|$ (269) 929 7174}
 \fancyfoot[L]{Generated from \href{https://github.com/akamoltres/resume/commit/\RawCommit}{\textcolor{blue}{akamoltres/resume \input{branch.tmp}@\input{prettycommit.tmp}}}.}
 \fancyfoot[C]{}
 \fancyfoot[R]{\thepage}
 
+\usepackage{titlesec}
+\titleformat{\section}{\vspace{2pt}\titlerule\vspace{1pt}\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing\section{0pt}{0pt}{3pt}
+\titleformat{\subsection}{\raggedright}{}{0em}{}
+\titlespacing\subsection{0pt}{0pt}{0pt}
+
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=0pt, partopsep=0pt}
+
 \begin{document}
 
-Test
+\section{Experience}
+
+\subsection{\textbf{Space Exploration Technologies, Inc:} \textit{Software Engineer} \hfill September 2021 -- Present}
+\begin{itemize}
+    \item Owned guidance and navigation software across multiple generations of Starlink satellites
+    \item Responsible for star tracker, flight computer, time synchronization, and configuration management software
+    \item Led flight software bringup for multiple v2 satellite revisions and served as mission director for inaugural launch
+    \item Delivered multiple flight software builds to the launch site for final satellite integration
+    \item Periodic on-call shifts as the point-of-contact for satellite bus software across the full Starlink fleet
+\end{itemize}
+
+\subsection{\textbf{Blue Origin, LLC:} \textit{Software Engineer} \hfill April 2020 -- September 2021}
+\begin{itemize}
+    \item Key contributor to BE-4 rocket engine controller software development and qualification efforts
+    \item Technical owner for microcontroller bootloader and self-tests
+    \item Rewrote microcontroller peripheral drivers and proposed associated requirement updates
+    \item Analyzed impact of requirement changes and implemented software changes
+\end{itemize}
+
+\subsection{\textbf{Blue Origin, LLC:} \textit{Aerospace Engineer (New Graduate Rotation)} \hfill February 2019 -- April 2020}
+\begin{itemize}
+    \item Built and maintained multiple production test software packages
+    \item Designed test result databases and built tools for component responsible engineers to access them
+    \item Supported BE-4 component development and production test campaigns
+    \item Completed preliminary design and analysis of a New Glenn stage valve
+\end{itemize}
+
+\subsection{\textbf{Blue Origin, LLC:} \textit{Engineering Intern} \hfill Summers 2017, 2018}
+\begin{itemize}
+    \item Ported flight software from real time microcontroller to Linux
+    \item Developed custom visualization tool for New Glenn GNC team
+    \item Refreshed Monte Carlo analysis on vehicle/launch tower clearance
+    \item Built graphical tool to visualize/modify attitude maneuvers
+\end{itemize}
+
+\subsection{\textbf{Boeing Defense, Space, and Security:} \textit{Flight Engineering Intern} \hfill Summer 2016}
+\begin{itemize}
+    \item Applied TVC hydraulic model to validate actuators against step response requirement
+    \item Updated and validated Simulink model of TVC actuators based on new system parameters
+    \item Resolved discrepancies between system performance table and CAD model of subsystem
+\end{itemize}
+
+\subsection{\textbf{Raytheon Missile Systems:} \textit{GNC Engineering Intern} \hfill Summer 2015}
+\begin{itemize}
+    \item Performed trade study on rocket motors, updating relevant factors and providing range data
+    \item Completed aerodynamic and structural analysis and updated 3DOF simulation for wind tunnel test
+    \item Implemented target update models and updated simulation parameters in preparation for flight test
+    \item Designed and implemented requirements tests for missile simulation framework
+\end{itemize}
+
+\subsection{\textbf{Michigan Aeronautical Science Association}}{September 2013 -- December 2018}
+\begin{itemize}
+    \item As Chief Engineer, led hybrid rocket team to 2nd place finish at IREC 2016
+    \item Led integration of engine and vehicle subsystems
+    \item Manufactured propellant grains, aluminum/steel components, composite airframe parts, and more
+    \item Wrote standard operating procedures and operated component and engine tests
+    \item Mentored new team members in a variety of projects, primarily within avionics and structures
+\end{itemize}
+
+\section{Skills}
+
+\subsection{Computer Skills}
+\begin{itemize}
+    \item \textit{Programming Languages:} C/C++, Python, bash, MATLAB
+    \item \textit{Software Tools:} Git, Subversion, Bazel, Make, Docker, GDB, Valgrind
+    \item \textit{System Design:} NX/Teamcenter, Creo/Windchill, SolidWorks
+    \item \textit{System Analysis:} ANSYS Mechanical
+\end{itemize}
+
+\subsection{Manufacturing Skills}
+\begin{itemize}
+    \item \textit{Basic Tools:} Proficient with soldering, standard shop tools, laser cutter, 3D printer, composite manufacturing
+    \item \textit{Machining:} Proficient with manual mill/manual lathe, familiar with CNC lathe/CNC router
+\end{itemize}
+
+\section{Education}
+\subsection{\textbf{University of Michigan - Ann Arbor}}
+\subsection{MEng Space Engineering (GPA: 4.000 / 4.000) \hfill Graduated: December 2018}
+\subsection{BSE Aerospace Engineering, Minors CS/EE (GPA: 3.464 / 4.000) \hfill Graduated: May 2017}
 
 \end{document}
