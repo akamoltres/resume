@@ -1,0 +1,21 @@
+\documentclass{article}
+
+\usepackage{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{catchfile}
+
+\CatchFileDef\RawCommit{rawcommit.tmp}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhead[L,R]{}
+\fancyhead[C]{\textbf{Abhiram Krishnan} \\ abhiram.krishnan27@gmail.com $|$ (269) 929 7174}
+\fancyfoot[L]{Generated from \href{https://github.com/akamoltres/resume/commit/\RawCommit}{\textcolor{blue}{akamoltres/resume \input{branch.tmp}@\input{prettycommit.tmp}}}.}
+\fancyfoot[C]{}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+Test
+
+\end{document}
