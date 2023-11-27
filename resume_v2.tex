@@ -2,7 +2,7 @@
 
 \usepackage[
     top=0.75in,
-    bottom=0.75in,
+    bottom=0.5in,
     left=0.75in,
     right=0.75in,
     headheight=17pt,
@@ -21,9 +21,8 @@
 \renewcommand{\headrulewidth}{0pt}
 \fancyhead[L,R]{}
 \fancyhead[C]{\textbf{Abhiram Krishnan} \\ abhiram.krishnan27@gmail.com $|$ (269) 929 7174}
-\fancyfoot[L]{Generated from \href{https://github.com/akamoltres/resume/commit/\RawCommit}{\textcolor{blue}{akamoltres/resume \input{branch.tmp}@\input{prettycommit.tmp}}}.}
 \fancyfoot[C]{}
-\fancyfoot[R]{\thepage}
+\fancyfoot[R]{}
 
 \usepackage{titlesec}
 \titleformat{\section}{\vspace{2pt}\titlerule\vspace{1pt}\scshape\raggedright}{}{0em}{}[\titlerule]
@@ -38,16 +37,19 @@
 
 \section{Experience}
 
-\subsection{\textbf{Space Exploration Technologies, Inc:} \textit{Software Engineer} \hfill September 2021 -- Present}
+\textbf{Space Exploration Technologies, Inc: Software Engineer} \hfill September 2021 -- Present
 \begin{itemize}
-    \item Owned guidance and navigation software across multiple generations of Starlink satellites
-    \item Responsible for star tracker, flight computer, time synchronization, and configuration management software
-    \item Led flight software bringup for multiple v2 satellite revisions and served as mission director for inaugural launch
-    \item Delivered multiple flight software builds to the launch site for final satellite integration
-    \item Periodic on-call shifts as the point-of-contact for satellite bus software across the full Starlink fleet
+    \item Flight software responsible engineer for Starlink flight computer, star tracker, propulsion avionics, actuators, vehicle time synchronization, revision/configuration management, and GNC software infrastructure
+    \item Brought up flight software for the initial v2-mini satellite revision and demonstrated on hardware-in-the-loop (HITL) testbed
+    \item Wrote testcases to demonstrate early mission and controlled flight capabilities on HITL testbeds and led efforts with the GNC and software test teams to demonstrate features required for launch
+    \item Responsible for weekly triage of controlled flight HITL cases (and through this regularly identified/root caused hardware and infrastructure issues)
+    \item Implemented 
+    \item Coordinated program-wide verification of flight software launch builds and delivered them to the launch site
+    \item Periodic bus software on-call - first point of contact for issues on orbit and on the production line
 \end{itemize}
 
-\subsection{\textbf{Blue Origin, LLC:} \textit{Software Engineer} \hfill April 2020 -- September 2021}
+\textbf{Blue Origin, LLC}\\
+\textbf{Software Engineer} \hfill April 2020 -- September 2021
 \begin{itemize}
     \item Key contributor to BE-4 rocket engine controller software development and qualification efforts
     \item Technical owner for microcontroller bootloader and self-tests
@@ -55,7 +57,7 @@
     \item Analyzed impact of requirement changes and implemented software changes
 \end{itemize}
 
-\subsection{\textbf{Blue Origin, LLC:} \textit{Aerospace Engineer (New Graduate Rotation)} \hfill February 2019 -- April 2020}
+\textbf{Aerospace Engineer (New Graduate Rotation)} \hfill February 2019 -- April 2020
 \begin{itemize}
     \item Built and maintained multiple production test software packages
     \item Designed test result databases and built tools for component responsible engineers to access them
@@ -63,7 +65,7 @@
     \item Completed preliminary design and analysis of a New Glenn stage valve
 \end{itemize}
 
-\subsection{\textbf{Blue Origin, LLC:} \textit{Engineering Intern} \hfill Summers 2017, 2018}
+\textbf{Engineering Intern} \hfill Summers 2017, 2018
 \begin{itemize}
     \item Ported flight software from real time microcontroller to Linux
     \item Developed custom visualization tool for New Glenn GNC team
@@ -71,13 +73,13 @@
     \item Built graphical tool to visualize/modify attitude maneuvers
 \end{itemize}
 
-\subsection{\textbf{Boeing Defense, Space, and Security:} \textit{Flight Engineering Intern} \hfill Summer 2016}
+\textbf{Boeing Defense, Space, and Security: Flight Engineering Intern} \hfill Summer 2016
 \begin{itemize}
     \item Applied TVC hydraulic model to validate actuators against step response requirement
     \item Updated and validated Simulink model of TVC actuators based on new system parameters
 \end{itemize}
 
-\subsection{\textbf{Raytheon Missile Systems:} \textit{GNC Engineering Intern} \hfill Summer 2015}
+\textbf{Raytheon Missile Systems: GNC Engineering Intern} \hfill Summer 2015
 \begin{itemize}
     \item Performed trade study on rocket motors, updating relevant factors and providing range data
     \item Completed aerodynamic and structural analysis and updated 3DOF simulation for wind tunnel test
@@ -85,29 +87,20 @@
     \item Designed and implemented requirements tests for missile simulation framework
 \end{itemize}
 
-\subsection{\textbf{Michigan Aeronautical Science Association} \hfill September 2013 -- December 2018}
-\begin{itemize}
-    \item As Chief Engineer, led hybrid rocket team to 2nd place finish at IREC 2016
-    \item Led integration of engine and vehicle subsystems
-    \item Manufactured propellant grains, aluminum/steel components, composite airframe parts, and more
-    \item Wrote standard operating procedures and operated component and engine tests
-    \item Mentored new team members in a variety of projects, primarily within avionics and structures
-\end{itemize}
-
 \section{Skills}
 
 \subsection{Computer Skills}
 \begin{itemize}
-    \item \textit{Programming Languages:} C/C++, Python, bash, MATLAB
-    \item \textit{Software Tools:} Git, Subversion, Bazel, Make, Docker, GDB, Valgrind
-    \item \textit{System Design:} NX/Teamcenter, Creo/Windchill, SolidWorks
-    \item \textit{System Analysis:} ANSYS Mechanical
+    \item \textbf{Programming Languages:} C/C++, Python, bash, MATLAB
+    \item \textbf{Software Tools:} Git, Subversion, Bazel, Make, Docker, GDB, Valgrind
+    \item \textbf{System Design:} NX/Teamcenter, Creo/Windchill, SolidWorks
+    \item \textbf{System Analysis:} ANSYS Mechanical
 \end{itemize}
 
 \subsection{Manufacturing Skills}
 \begin{itemize}
-    \item \textit{Basic Tools:} Proficient with soldering, standard shop tools, laser cutter, 3D printer, composite manufacturing
-    \item \textit{Machining:} Proficient with manual mill/manual lathe, familiar with CNC lathe/CNC router
+    \item \textbf{Basic Tools:} Proficient with soldering, standard shop tools, laser cutter, 3D printer, composite manufacturing
+    \item \textbf{Machining:} Proficient with manual mill/manual lathe, familiar with CNC lathe/CNC router
 \end{itemize}
 
 \section{Education}
