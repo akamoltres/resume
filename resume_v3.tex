@@ -1,0 +1,117 @@
+\documentclass{article}
+
+\usepackage{mathptmx}
+
+\usepackage[
+    top=0.75in,
+    bottom=0.75in,
+    left=0.75in,
+    right=0.75in,
+    headheight=17pt,
+    includehead,
+    includefoot,
+    heightrounded,
+]{geometry}
+
+\usepackage{color}
+\usepackage[hidelinks]{hyperref}
+\usepackage{catchfile}
+\CatchFileDef\RawCommit{rawcommit.tmp}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[L,R]{}
+\fancyhead[C]{\large\textbf{Abhiram Krishnan} \\ \normalsize abhiram.krishnan27@gmail.com $|$ (269) 929 7174}
+\fancyfoot[L]{Generated from \href{https://github.com/akamoltres/resume/commit/\RawCommit}{\textcolor{blue}{akamoltres/resume \input{branch.tmp}@\input{prettycommit.tmp}}}.}
+\fancyfoot[C]{}
+\fancyfoot[R]{}
+
+\usepackage{titlesec}
+\titleformat{\section}{\vspace{2pt}\titlerule\vspace{1pt}\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing\section{0pt}{0pt}{3pt}
+\titleformat{\subsection}{\raggedright}{}{0em}{}
+\titlespacing\subsection{0pt}{0pt}{0pt}
+
+\usepackage{enumitem}
+\setlist{noitemsep, topsep=0pt, partopsep=0pt}
+
+\begin{document}
+
+\section{Experience}
+
+\subsection{\textbf{Space Exploration Technologies, Inc}}
+\raggedleft\textit{Software Engineer} \hfill \textit{September 2021 -- Present}
+\begin{itemize}
+    \item Flight software responsible engineer for Starlink flight computer, star tracker, propulsion avionics, actuators, vehicle time synchronization, revision/configuration management, and GNC software infrastructure
+    \item Brought up flight software for the multiple v2-mini satellite revisions
+    \item Wrote testcases to demonstrate early mission and controlled flight capabilities on hardware-in-the-loop (HITL) testbeds and led efforts between the GNC and software test teams to demonstrate features required for launch
+    \item Responsible for weekly triage of HITL tests, regularly identifying and root causing hardware and infrastructure regressions
+    \item Coordinated program-wide verification of flight software launch builds and delivered them to the launch site
+    \item Periodic bus software on-call, serving as first point of contact for issues on orbit and on the production line
+\end{itemize}
+
+\bigskip
+
+\subsection{\textbf{Blue Origin, LLC}}
+\raggedleft\textit{Software Engineer} \hfill \textit{April 2020 -- September 2021}
+\begin{itemize}
+    \item Key contributor to BE-4 rocket engine controller software development and qualification efforts
+    \item Technical owner for microcontroller bootloader and self-tests
+    \item Rewrote microcontroller peripheral drivers and proposed associated requirement updates
+    \item Analyzed impact of requirement changes and implemented software changes
+\end{itemize}
+
+\raggedleft\textit{Aerospace Engineer (New Graduate Rotation)} \hfill \textit{February 2019 -- April 2020}
+\begin{itemize}
+    \item Built and maintained multiple production test software packages
+    \item Designed test result databases and built tools for component responsible engineers to access them
+    \item Supported BE-4 component development and production test campaigns
+    \item Completed preliminary design and analysis of a New Glenn stage valve
+\end{itemize}
+
+\raggedleft\textit{Engineering Intern} \hfill \textit{Summers 2017, 2018}
+\begin{itemize}
+    \item Ported flight software from real time microcontroller to Linux
+    \item Developed custom visualization tool for New Glenn GNC team
+    \item Refreshed Monte Carlo analysis on vehicle/launch tower clearance
+    \item Built graphical tool to visualize/modify attitude maneuvers
+\end{itemize}
+
+\bigskip
+
+\subsection{\textbf{Michigan Aeronautical Science Association} \hfill September 2013 -- December 2018}
+\begin{itemize}
+    \item As Chief Engineer, led hybrid rocket team to 2nd place finish at IREC 2016
+    \item Led integration of engine and vehicle subsystems
+    \item Manufactured propellant grains, aluminum/steel components, composite airframe parts, and more
+    \item Wrote standard operating procedures and operated component and engine tests
+    \item Mentored new team members in a variety of projects, primarily within avionics and structures
+\end{itemize}
+
+\bigskip
+
+\section{Skills}
+
+\subsection{Computer Skills}
+\begin{itemize}
+    \item \textit{Programming Languages:} C/C++, Python, bash, MATLAB
+    \item \textit{Software Tools:} Git, Subversion, Bazel, Make, Docker, GDB, Valgrind
+    \item \textit{System Design:} NX/Teamcenter, Creo/Windchill, SolidWorks
+    \item \textit{System Analysis:} ANSYS Mechanical
+\end{itemize}
+
+\subsection{Manufacturing Skills}
+\begin{itemize}
+    \item \textit{Basic Tools:} Proficient with soldering, standard shop tools, laser cutter, 3D printer, composite manufacturing
+    \item \textit{Machining:} Proficient with manual mill/manual lathe, familiar with CNC lathe/CNC router
+\end{itemize}
+
+\bigskip
+
+\section{Education}
+\subsection{\textbf{University of Michigan - Ann Arbor}}
+\subsection{MEng Space Engineering (GPA: 4.000 / 4.000) \hfill Graduated: December 2018}
+\subsection{BSE Aerospace Engineering, Minors CS/EE (GPA: 3.464 / 4.000) \hfill Graduated: May 2017}
+
+\end{document}
