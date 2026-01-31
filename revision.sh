@@ -1,8 +1,10 @@
 #!/bin/sh
-printf $(git rev-parse --abbrev-ref HEAD) > branch.tmp
-printf "$(git rev-parse HEAD)" > rawcommit.tmp
+branch=$(git rev-parse --abbrev-ref HEAD)
+rawcommit="$(git rev-parse HEAD)"
 if [ -n "$(git status --porcelain)" ] ; then
-	printf "$(git rev-parse --short HEAD)+" > prettycommit.tmp
+	prettycommit="$(git rev-parse --short HEAD)+"
 else
-	printf "$(git rev-parse --short HEAD)" > prettycommit.tmp
+	prettycommit="$(git rev-parse --short HEAD)"
 fi
+
+printf '%s%s%s%s%s%s%s' '\fancyfoot[L]{Generated from \href{https://github.com/akamoltres/resume/commit/' $rawcommit '}{\textcolor{blue}{akamoltres/resume ' $branch '@' $prettycommit '}}.}' > revision.tex.tmp
